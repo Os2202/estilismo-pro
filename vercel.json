@@ -1,5 +1,8 @@
 {
   "name": "estilismo-pro",
+  "buildCommand": "echo 'Static site - no build required'",
+  "outputDirectory": ".",
+  "installCommand": "npm install",
   "rewrites": [
     {
       "source": "/app",
