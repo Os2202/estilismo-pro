@@ -1,0 +1,39 @@
+{
+  "name": "estilismo-pro",
+  "version": "1.0.0",
+  "description": "Sistema profesional para salones de belleza - gestión de clientes, citas, tratamientos y costos",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static build - no build step required'",
+    "start": "node server.js",
+    "deploy": "vercel --prod",
+    "preview": "vercel"
+  },
+  "keywords": [
+    "salon",
+    "belleza",
+    "gestión",
+    "clientes",
+    "citas",
+    "tratamientos",
+    "estilismo",
+    "peluquería"
+  ],
+  "author": "Estilismo Pro",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tu-usuario/estilismo-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/estilismo-pro/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/estilismo-pro#readme"
+}

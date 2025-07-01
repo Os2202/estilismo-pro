@@ -1,0 +1,60 @@
+# Archivos de servidor Node.js (no necesarios para Netlify)
+server.js
+server_secure.js
+generate_ssl.ps1
+openssl.tar.gz
+
+# Certificados SSL (no subir por seguridad)
+*.crt
+*.key
+*.pem
+*.pfx
+*.p12
+estilismo_ssl.conf
+
+# Archivos de backup y temporales
+*_backup*.html
+temp_*
+*.tmp
+*.temp
+
+# Logs y archivos de debug
+*.log
+logs/
+debug/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (si usas en el futuro)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno locales
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Carpetas de build y distribución
+dist/
+build/
+
+# Cache de IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de prueba
+test/
+tests/
+spec/
+
+# Documentación temporal
+docs/temp/

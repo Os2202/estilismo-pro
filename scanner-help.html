@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda del Escáner - Estilismo Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-bg { background: linear-gradient(135deg, #f72585 0%, #00f2fe 100%); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  
+  <div class="gradient-bg text-white py-8">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl font-bold mb-2">📷 Ayuda del Escáner</h1>
+      <p class="text-xl opacity-90">Soluciona problemas de permisos de cámara en Chrome</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    
+    <!-- Problema principal -->
+    <div class="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-bold text-red-800 mb-4">🚨 Problema: Chrome no da permisos para la cámara</h2>
+      <p class="text-red-700">Si el escáner no funciona, es probable que Chrome esté bloqueando el acceso a la cámara.</p>
+    </div>
+
+    <!-- Solución paso a paso -->
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      
+      <!-- Método 1 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-xl font-bold text-blue-800 mb-4">🔒 Método 1: Desde la URL</h3>
+        <ol class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
+            <span>Haz clic en el <strong>🔒 candado</strong> o <strong>ℹ️ ícono</strong> junto a la URL</span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
+            <span>Selecciona <strong>"Configuración del sitio"</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">3</span>
+            <span>En <strong>"Cámara"</strong> selecciona <strong>"Permitir"</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">4</span>
+            <span>Recarga la página</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Método 2 -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-xl font-bold text-green-800 mb-4">⚙️ Método 2: Configuración</h3>
+        <ol class="space-y-3 text-gray-700">
+          <li class="flex items-start">
+            <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
+            <span>Ve a <code class="bg-gray-100 px-2 py-1 rounded text-sm">chrome://settings/content/camera</code></span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
+            <span>Verifica que <strong>"Los sitios pueden pedir usar tu cámara"</strong> esté activado</span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">3</span>
+            <span>Si tu sitio aparece en <strong>"Bloqueados"</strong>, elimínalo</span>
+          </li>
+          <li class="flex items-start">
+            <span class="bg-green-100 text-green-800 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">4</span>
+            <span>Vuelve a la app y activa el escáner</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Requisitos importantes -->
+    <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
+      <h3 class="text-xl font-bold text-yellow-800 mb-4">🔑 Requisitos IMPORTANTES</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-bold text-yellow-700 mb-2">✅ Debe funcionar:</h4>
+          <ul class="space-y-1 text-yellow-700 text-sm">
+            <li>• URL con <code>https://</code></li>
+            <li>• Sitio desplegado en Netlify</li>
+            <li>• Chrome, Firefox, Safari, Edge</li>
+            <li>• Permisos de cámara permitidos</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-yellow-700 mb-2">❌ NO funciona:</h4>
+          <ul class="space-y-1 text-yellow-700 text-sm">
+            <li>• URL con <code>http://</code></li>
+            <li>• Archivos locales <code>file://</code></li>
+            <li>• localhost sin SSL</li>
+            <li>• Navegadores muy antiguos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testing rápido -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">🧪 Test Rápido</h3>
+      <div class="bg-gray-50 rounded p-4">
+        <ol class="space-y-2 text-gray-700">
+          <li><strong>1.</strong> Abre tu app en <code class="bg-blue-100 px-2 py-1 rounded">https://tu-sitio.netlify.app</code></li>
+          <li><strong>2.</strong> Ve a <strong>Inventario</strong> o <strong>Ventas</strong></li>
+          <li><strong>3.</strong> Haz clic en <button class="bg-purple-600 text-white px-3 py-1 rounded text-sm">📷 Activar Escáner</button></li>
+          <li><strong>4.</strong> Debe aparecer popup: <em>"¿Permitir usar tu cámara?"</em></li>
+          <li><strong>5.</strong> Haz clic en <button class="bg-green-600 text-white px-3 py-1 rounded text-sm">✅ Permitir</button></li>
+          <li><strong>6.</strong> Verifica que se vea tu cámara</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Errores comunes -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">⚠️ Errores Comunes</h3>
+      <div class="space-y-4">
+        
+        <div class="border-l-4 border-red-400 pl-4">
+          <h4 class="font-bold text-red-700">NotAllowedError</h4>
+          <p class="text-gray-600">Permisos denegados → Seguir métodos 1 y 2 arriba</p>
+        </div>
+        
+        <div class="border-l-4 border-orange-400 pl-4">
+          <h4 class="font-bold text-orange-700">NotFoundError</h4>
+          <p class="text-gray-600">Sin cámara → Verificar hardware</p>
+        </div>
+        
+        <div class="border-l-4 border-blue-400 pl-4">
+          <h4 class="font-bold text-blue-700">SecurityError</h4>
+          <p class="text-gray-600">No es HTTPS → Usar solo URL de Netlify</p>
+        </div>
+        
+        <div class="border-l-4 border-purple-400 pl-4">
+          <h4 class="font-bold text-purple-700">NotSupportedError</h4>
+          <p class="text-gray-600">Navegador no compatible → Actualizar navegador</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solución avanzada -->
+    <div class="bg-gray-100 rounded-lg p-6 mb-8">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">🔧 Solución Avanzada</h3>
+      <div class="grid md:grid-cols-3 gap-4 text-sm">
+        
+        <div class="bg-white p-4 rounded">
+          <h4 class="font-bold mb-2">🧹 Limpiar Cache</h4>
+          <ol class="space-y-1 text-gray-600">
+            <li>1. <code>chrome://settings/clearBrowserData</code></li>
+            <li>2. Seleccionar "Datos de sitios web"</li>
+            <li>3. Período: "Desde siempre"</li>
+            <li>4. Limpiar datos</li>
+          </ol>
+        </div>
+        
+        <div class="bg-white p-4 rounded">
+          <h4 class="font-bold mb-2">🔄 Reiniciar Chrome</h4>
+          <ol class="space-y-1 text-gray-600">
+            <li>1. Cerrar Chrome completamente</li>
+            <li>2. Abrir de nuevo</li>
+            <li>3. Ir directo al sitio HTTPS</li>
+            <li>4. Probar escáner</li>
+          </ol>
+        </div>
+        
+        <div class="bg-white p-4 rounded">
+          <h4 class="font-bold mb-2">🕵️ Modo Incógnito</h4>
+          <ol class="space-y-1 text-gray-600">
+            <li>1. <kbd>Ctrl+Shift+N</kbd></li>
+            <li>2. Ir al sitio HTTPS</li>
+            <li>3. Aceptar permisos</li>
+            <li>4. Probar escáner</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alternativas -->
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+      <h3 class="text-xl font-bold text-blue-800 mb-4">🔄 Alternativas</h3>
+      <div class="grid md:grid-cols-3 gap-4">
+        
+        <div>
+          <h4 class="font-bold text-blue-700 mb-2">📝 Entrada Manual</h4>
+          <p class="text-blue-600 text-sm">Usa el campo "Código de barras" y escribe el código manualmente.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-blue-700 mb-2">🌐 Otros Navegadores</h4>
+          <p class="text-blue-600 text-sm">Prueba Firefox, Edge o Safari como alternativa.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-blue-700 mb-2">📱 App Externa</h4>
+          <p class="text-blue-600 text-sm">Usa cualquier app de códigos de barras y copia el resultado.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón de regreso -->
+    <div class="text-center mt-8">
+      <button onclick="window.close()" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
+        🔙 Volver a la Aplicación
+      </button>
+      <p class="text-gray-500 text-sm mt-2">Si esta ventana no se cierra, simplemente ve a la pestaña anterior</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-gray-800 text-white text-center py-6 mt-12">
+    <p class="text-sm">💡 Tip: El escáner funciona mejor con buena iluminación y códigos de barras nítidos</p>
+  </div>
+
+</body>
+</html>
