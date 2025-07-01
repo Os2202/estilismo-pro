@@ -1,22 +1,13 @@
 {
-  "version": 2,
   "name": "estilismo-pro",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "dest": "/index.html"
+      "source": "/app",
+      "destination": "/estilismo_app.html"
     },
     {
-      "src": "/app",
-      "dest": "/estilismo_app.html"
-    },
-    {
-      "src": "/help",
-      "dest": "/scanner-help.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/help",
+      "destination": "/scanner-help.html"
     }
   ],
   "headers": [
